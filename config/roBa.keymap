@@ -109,16 +109,17 @@
             hold-trigger-on-release;
         };
 
-
         // 新しいスクロール動作の追加
+
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             // 追加: スクロールのタップ時間を設定 (20ms)
+
             tap-ms = <20>;
         };
-
     };
 
     keymap {
@@ -126,10 +127,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W              &kp E                  &kp R                       &kp T                                                        &kp Y                  &kp U                 &lt 5 I                 &kp O               &kp P
-&hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F         &kp G              &kp LS(LG(KP_N4))      &kp ESC            &kp H                  &hmr_r RIGHT_SHIFT J  &hmr_r RIGHT_COMMAND K  &hmr_r RIGHT_ALT L  &kp SEMICOLON
-&kp Z           &kp X              &kp C                  &kp V                       &kp B              &kp LG(LS(Z))          &kp LA(SPACE)      &kp N                  &kp M                 &kp COMMA               &kp DOT             &kp SLASH
-&kp LG(LSHIFT)  &kp LCTRL          &kp LEFT_ALT           &thumb_lt 2 LC(SPACE) &mt LEFT_COMMAND SPACE  &thumb_lt 1 TAB        &thumb_lt 1 ENTER  &thumb_lt 3 BACKSPACE                                                                    &kp ESC
+&kp Q           &kp W              &kp E                  &kp R                  &kp T                                                                &kp Y                  &kp U                 &lt 5 I                 &kp O               &kp P
+&hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F    &kp G                   &kp LS(LG(NUMBER_4))      &kp LA(SPACE)      &kp H                  &hmr_r RIGHT_SHIFT J  &hmr_r RIGHT_COMMAND K  &hmr_r RIGHT_ALT L  &kp SEMICOLON
+&kp Z           &kp X              &kp C                  &kp V                  &kp B                   &kp LG(C)                 &kp LG(V)          &kp N                  &kp M                 &kp COMMA               &kp DOT             &kp SLASH
+&kp LG(Z)       &kp LG(LS(Z))      &kp LEFT_ALT           &thumb_lt 2 LC(SPACE)  &mt LEFT_COMMAND SPACE  &thumb_lt 1 TAB           &thumb_lt 1 ENTER  &thumb_lt 3 BACKSPACE                                                                    &kp ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -137,10 +138,10 @@
 
         SYMBOL {
             bindings = <
-&trans     &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT                                    &kp CARET  &kp AMPS   &kp LBRC  &kp RBRC  &kp PIPE
-&kp TILDE  &kp EXCL     &kp QMARK  &kp PLUS    &kp STAR     &trans             &kp LG(LS(P))  &kp SQT    &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL
-&trans     &kp LT       &kp GT     &kp COLON   &trans       &kt LG(LS(F))      &kp LG(P)      &kp DQT    &kp UNDER  &kp LBKT  &kp RBKT  &kp BSLH
-&trans     &trans       &trans     &trans      &trans       &trans             &trans         &trans                                    &trans
+&trans     &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT                                    &kp CARET  &kp AMPS   &kp LBRC  &kp RBRC  &kp PIPE
+&kp TILDE  &kp EXCL     &kp QMARK  &kp SQT            &kp STAR     &trans             &kp LG(LS(P))  &kp PLUS   &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL
+&trans     &kp LT       &kp GT     &kp DOUBLE_QUOTES  &none        &kt LG(LS(F))      &kp LG(P)      &none      &kp UNDER  &kp LBKT  &kp RBKT  &kp BSLH
+&trans     &trans       &trans     &trans             &trans       &trans             &trans         &trans                                    &trans
             >;
         };
 
@@ -166,10 +167,10 @@
 
         MOUSE {
             bindings = <
-&kp ESC   &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp F11                       &trans  &trans    &trans    &trans    &trans
-&mkp MB4  &trans              &trans            &mkp MB1             &mkp MB5  &trans      &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB2  &trans
-&trans    &trans              &trans            &trans               &trans    &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans    &trans              &trans            &trans               &trans    &trans      &trans  &trans                                &trans
+&mkp MB4  &kp LC(LEFT_ARROW)  &msc SCRL_UP    &kp LC(RIGHT_ARROW)  &kp F11                      &trans  &trans    &trans    &trans    &mkp MB5
+&trans    &kp LEFT_ALT        &msc SCRL_DOWN  &mkp MB1             &trans   &trans      &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB2  &trans
+&trans    &trans              &trans          &trans               &trans   &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans    &trans              &trans          &trans               &trans   &trans      &trans  &trans                                &trans
             >;
         };
 
@@ -179,15 +180,6 @@
 &kp F1        &kp F2        &kp F3        &kp F4   &kp F5   &none      &none        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp F11       &kp F12       &kp F13       &kp F14  &kp F15  &none      &bootloader  &none   &none   &none   &none   &none
 &bt BT_CLR    &none         &none         &none    &none    &none      &none        &none                           &bt BT_CLR_ALL
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
