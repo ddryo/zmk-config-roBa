@@ -36,8 +36,8 @@
             key-positions = <11 10>;
         };
 
-        desktop {
-            bindings = <&kp F11>;
+        mission-control {
+            bindings = <&kp LC(UP_ARROW)>;
             key-positions = <1 2 3>;
         };
 
@@ -49,6 +49,26 @@
         desktop-next {
             bindings = <&kp LC(RIGHT_ARROW)>;
             key-positions = <2 3>;
+        };
+
+        scroll-up {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <7 8>;
+        };
+
+        scroll_down {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <31 32>;
+        };
+
+        click {
+            bindings = <&mkp MB1>;
+            key-positions = <19 20>;
+        };
+
+        desktop {
+            bindings = <&kp F11>;
+            key-positions = <24 23 25>;
         };
     };
 
@@ -156,10 +176,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp F11                        &kp PAGE_UP    &kp LA(LEFT_ARROW)      &kp UP_ARROW    &kp LA(RIGHT_ARROW)      &kp ESCAPE
-&kp LCTRL   &kp LALT            &kp LGUI          &kp LSHFT            &kp ENTER  &trans      &trans  &kp HOME       &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
-&trans      &trans              &trans            &trans               &trans     &trans      &trans  &kp PAGE_DOWN  &kp LS(LG(LEFT_ARROW))  &none           &kp LS(LG(RIGHT_ARROW))  &trans
-&trans      &trans              &trans            &trans               &mo 5      &trans      &trans  &trans                                                                          &trans
+&kp ESCAPE  &mkp MB4  &mkp MB5  &none      &kp F11                      &none     &kp LA(LEFT_ARROW)      &kp UP_ARROW    &kp LA(RIGHT_ARROW)      &kp ESCAPE
+&kp LCTRL   &kp LALT  &kp LGUI  &kp LSHFT  &none    &trans      &trans  &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END
+&trans      &trans    &trans    &trans     &trans   &trans      &trans  &none     &kp LS(LG(LEFT_ARROW))  &none           &kp LS(LG(RIGHT_ARROW))  &trans
+&trans      &trans    &trans    &mo 5      &trans   &trans      &trans  &trans                                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -167,10 +187,10 @@
 
         MOUSE {
             bindings = <
-&mkp MB4  &kp LC(LEFT_ARROW)  &msc SCRL_UP    &kp LC(RIGHT_ARROW)  &kp F11                      &trans  &trans    &trans    &trans    &mkp MB5
-&trans    &kp LEFT_ALT        &msc SCRL_DOWN  &mkp MB1             &trans   &trans      &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB2  &trans
-&trans    &trans              &trans          &trans               &trans   &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans    &trans              &trans          &trans               &trans   &trans      &trans  &trans                                &trans
+&mkp MB4  &mkp MB5  &trans  &trans    &trans                      &trans  &trans    &mkp MB3  &trans    &trans
+&trans    &trans    &trans  &mkp MB1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB2  &trans
+&trans    &trans    &trans  &trans    &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans    &trans    &trans  &trans    &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
