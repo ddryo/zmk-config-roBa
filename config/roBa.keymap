@@ -61,19 +61,31 @@
 
         scroll_down {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <31 32>;
+            key-positions = <32 31>;
             timeout-ms = <40>;
         };
 
         click {
             bindings = <&mkp MB1>;
-            key-positions = <19 20>;
+            key-positions = <19 18>;
             timeout-ms = <40>;
         };
 
         desktop {
             bindings = <&kp F11>;
             key-positions = <24 23 25>;
+        };
+
+        click-r {
+            bindings = <&mkp MB2>;
+            key-positions = <20 21>;
+            timeout-ms = <40>;
+        };
+
+        click-3 {
+            bindings = <&mkp MB3>;
+            key-positions = <20 19 18>;
+            timeout-ms = <40>;
         };
     };
 
@@ -163,10 +175,10 @@
 
         SYMBOL {
             bindings = <
-&trans     &kp AT_SIGN   &kp HASH           &kp DOLLAR  &kp PERCENT                                    &kp CARET  &kp AMPS   &kp LBRC  &kp RBRC  &kp PIPE
-&kp TILDE  &kp GRAVE     &kp DOUBLE_QUOTES  &kp SQT     &kp STAR     &trans             &kp LG(LS(P))  &kp PLUS   &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL
-&none      &kp QUESTION  &kp EXCLAMATION    &none       &none        &kt LG(LS(F))      &kp LG(P)      &none      &kp UNDER  &kp LBKT  &kp RBKT  &kp BSLH
-&trans     &trans        &trans             &trans      &trans       &trans             &trans         &trans                                    &trans
+&trans           &kp AT_SIGN   &kp HASH           &kp DOLLAR  &kp PERCENT                                    &none         &kp AMPS   &kp LBRC  &kp RBRC  &kp PIPE
+&kp EXCLAMATION  &kp QUESTION  &kp DOUBLE_QUOTES  &kp SQT     &kp GRAVE    &trans             &kp LG(LS(P))  &kp PERCENT   &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL
+&none            &kp TILDE     &kp CARET          &kp UNDER   &none        &kt LG(LS(F))      &kp LG(P)      &kp ASTERISK  &kp PLUS   &kp LBKT  &kp RBKT  &kp BSLH
+&trans           &trans        &trans             &trans      &trans       &trans             &trans         &trans                                       &trans
             >;
         };
 
@@ -192,10 +204,10 @@
 
         MOUSE {
             bindings = <
-&mkp MB4  &mkp MB5  &trans  &trans    &trans                      &trans  &trans    &mkp MB3  &trans    &trans
-&trans    &trans    &trans  &mkp MB1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB2  &trans
-&trans    &trans    &trans  &trans    &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans    &trans    &trans  &trans    &trans  &trans      &trans  &trans                                &trans
+&trans  &trans  &trans  &trans    &trans                      &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &mkp MB1  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans                            &trans
             >;
         };
 
