@@ -156,11 +156,13 @@
         };
 
         // 新しいスクロール動作の追加
+
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -190,10 +192,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                           &none   &kp N7  &kp N8  &kp N9  &kp N0
-&kp KP_N0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &trans  &none   &kp N4  &kp N5  &kp N6  &kp N0
-&kp KP_N0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &trans                       &trans  &none   &kp N1  &kp N2  &kp N3  &kp N0
-&trans     &trans           &trans           &trans           &trans        &trans                       &trans  &trans                          &trans
+&kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                                         &none        &kp N7  &kp N8  &kp N9  &kp N0
+&kp KP_N0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOT  &kp LC(LA(KP_NUMBER_0))      &trans  &kp PERCENT  &kp N4  &kp N5  &kp N6  &kp N0
+&kp KP_N0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none    &trans                       &trans  &none        &kp N1  &kp N2  &kp N3  &kp N0
+&trans     &trans           &trans           &trans           &trans   &trans                       &trans  &trans                               &trans
             >;
         };
 
