@@ -33,11 +33,6 @@
     combos {
         compatible = "zmk,combos";
 
-        lang {
-            bindings = <&to_layer_0 LC(SPACE)>;
-            key-positions = <11 10>;
-        };
-
         mission-control {
             bindings = <&kp LC(UP_ARROW)>;
             key-positions = <1 2 3>;
@@ -63,7 +58,7 @@
 
         scroll_down {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <32 31>;
+            key-positions = <19 20>;
             timeout-ms = <40>;
         };
 
