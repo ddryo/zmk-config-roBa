@@ -78,14 +78,16 @@
 
         click-r {
             bindings = <&mkp MB2>;
-            key-positions = <20 21>;
-            timeout-ms = <40>;
+            key-positions = <20 19>;
+            timeout-ms = <50>;
+            layers = <4>;
         };
 
         click-3 {
             bindings = <&mkp MB3>;
             key-positions = <20 19 18>;
-            timeout-ms = <40>;
+            timeout-ms = <50>;
+            layers = <4>;
         };
     };
 
