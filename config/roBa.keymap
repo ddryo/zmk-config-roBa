@@ -58,7 +58,7 @@
 
         scroll_down {
             bindings = <&msc SCRL_DOWN>;
-            key-positions = <19 20>;
+            key-positions = <31 32>;
             timeout-ms = <40>;
         };
 
@@ -198,7 +198,7 @@
             bindings = <
 &trans           &kp AT_SIGN   &kp HASH           &kp DOLLAR  &kp PERCENT                                    &none         &kp AMPS   &kp LBRC  &kp RBRC  &kp PIPE
 &kp EXCLAMATION  &kp QUESTION  &kp DOUBLE_QUOTES  &kp SQT     &kp GRAVE    &trans             &kp LG(LS(P))  &kp PERCENT   &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL
-&none            &kp TILDE     &kp CARET          &kp UNDER   &none        &kt LG(LS(F))      &kp LG(P)      &kp ASTERISK  &kp PLUS   &kp LBKT  &kp RBKT  &kp BSLH
+&none            &kp TILDE     &kp CARET          &kp UNDER   &none        &kp LG(LS(F))      &kp LG(P)      &kp ASTERISK  &kp PLUS   &kp LBKT  &kp RBKT  &kp BSLH
 &trans           &trans        &trans             &trans      &trans       &trans             &trans         &trans                                       &trans
             >;
         };
