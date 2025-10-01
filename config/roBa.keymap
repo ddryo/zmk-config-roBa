@@ -188,7 +188,7 @@
 &kp Q           &kp W              &kp E                  &kp R                &kp T                                                                        &kp Y            &kp U                 &kp I                   &kp O               &kp P
 &hrm_l LCTRL A  &hrm_l LEFT_ALT S  &hrm_l LEFT_COMMAND D  &hrm_l LEFT_SHIFT F  &kp G                          &kp LS(LG(NUMBER_4))       &kp LA(SPACE)      &kp H            &hmr_r RIGHT_SHIFT J  &hmr_r RIGHT_COMMAND K  &hmr_r RIGHT_ALT L  &kp SEMICOLON
 &kp Z           &kp X              &kp C                  &kp V                &kp B                          &kp LG(LS(Z))              &kp LG(V)          &kp N            &kp M                 &kp COMMA               &kp DOT             &kp SLASH
-&kp ESCAPE      &kp LG(LS(Z))      &none                  &thumb_lt 2 TAB      &thumb_cmd LEFT_COMMAND SPACE  &thumb_lt 1 BACKSPACE      &thumb_lt 1 ENTER  &lt 3 LC(SPACE)                                                                    &kp ESC
+&kp ESCAPE      &kp LG(LS(Z))      &none                  &thumb_lt 2 TAB      &thumb_cmd LEFT_COMMAND SPACE  &thumb_lt 1 BACKSPACE      &thumb_lt 2 ENTER  &lt 3 LC(SPACE)                                                                    &kp ESC
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -196,19 +196,19 @@
 
         SYMBOL {
             bindings = <
-&trans           &kp AT_SIGN   &kp HASH           &kp DOLLAR  &kp PERCENT                                    &none         &kp AMPS   &kp LBRC  &kp RBRC  &kp PIPE
-&kp EXCLAMATION  &kp QUESTION  &kp DOUBLE_QUOTES  &kp SQT     &kp GRAVE    &trans             &kp LG(LS(P))  &kp PERCENT   &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL
-&none            &kp TILDE     &kp CARET          &kp UNDER   &none        &kp LG(LS(F))      &kp LG(P)      &kp ASTERISK  &kp PLUS   &kp LBKT  &kp RBKT  &kp BSLH
-&trans           &trans        &trans             &trans      &trans       &trans             &trans         &trans                                       &trans
+&trans        &kp AT_SIGN  &kp HASH           &kp DOLLAR  &kp PERCENT                                        &none         &kp AMPS   &kp LBRC  &kp RBRC  &kp PIPE
+&kp QUESTION  &kp GRAVE    &kp DOUBLE_QUOTES  &kp SQT     &kp EXCLAMATION  &trans             &kp LG(LS(P))  &kp PERCENT   &kp MINUS  &kp LPAR  &kp RPAR  &kp EQUAL
+&none         &kp TILDE    &kp CARET          &kp UNDER   &none            &kp LG(LS(F))      &kp LG(P)      &kp ASTERISK  &kp PLUS   &kp LBKT  &kp RBKT  &kp BSLH
+&trans        &trans       &trans             &trans      &trans           &trans             &trans         &trans                                       &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                                         &none        &kp N7  &kp N8  &kp N9  &kp N0
-&kp KP_N0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOT  &kp LC(LA(KP_NUMBER_0))      &trans  &kp PERCENT  &kp N4  &kp N5  &kp N6  &kp N0
-&kp KP_N0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none    &trans                       &trans  &none        &kp N1  &kp N2  &kp N3  &kp N0
-&trans     &trans           &trans           &trans           &trans   &trans                       &trans  &trans                               &trans
+&none      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none                                         &kp PLUS      &kp N7  &kp N8  &kp N9  &kp MINUS
+&kp KP_N0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp DOT  &kp LC(LA(KP_NUMBER_0))      &trans  &kp PERCENT   &kp N4  &kp N5  &kp N6  &kp N0
+&kp KP_N0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none    &trans                       &trans  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp N0
+&trans     &trans           &trans           &trans           &trans   &trans                       &trans  &kp DOT                               &trans
             >;
         };
 
