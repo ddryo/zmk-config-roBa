@@ -35,18 +35,18 @@
 
         mission-control {
             bindings = <&kp LC(UP_ARROW)>;
-            key-positions = <38 11 12 13>;
+            key-positions = <11 12 13>;
         };
 
         desktop-prev {
             bindings = <&kp LC(LEFT_ARROW)>;
-            key-positions = <11 12 38>;
+            key-positions = <11 12 10>;
             timeout-ms = <50>;
         };
 
         desktop-next {
             bindings = <&kp LC(RIGHT_ARROW)>;
-            key-positions = <13 12 38>;
+            key-positions = <13 12 14>;
             timeout-ms = <50>;
         };
 
