@@ -35,12 +35,12 @@
 
         mission-control {
             bindings = <&kp LC(UP_ARROW)>;
-            key-positions = <11 12 13>;
+            key-positions = <11 12 13 10>;
         };
 
         desktop-prev {
             bindings = <&kp LC(LEFT_ARROW)>;
-            key-positions = <11 12 10>;
+            key-positions = <11 12 13>;
             timeout-ms = <50>;
         };
 
