@@ -225,10 +225,10 @@
 
         NUM {
             bindings = <
-&none                             &kp KP_NUMBER_7               &kp KP_NUMBER_8                   &kp KP_NUMBER_9             &none                        &kp PLUS      &kp N7  &kp N8  &kp N9  &kp MINUS
-&home_l LEFT_CONTROL KP_NUMBER_0  &home_l LEFT_ALT KP_NUMBER_4  &home_l LEFT_COMMAND KP_NUMBER_5  &home_l LSHIFT KP_NUMBER_6  &kp DOT  &trans      &trans  &kp PERCENT   &kp N4  &kp N5  &kp N6  &kp N0
-&kp KP_N0                         &kp KP_NUMBER_1               &kp KP_NUMBER_2                   &kp KP_NUMBER_3             &none    &trans      &trans  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp N0
-&trans                            &trans                        &trans                            &trans                      &trans   &trans      &trans  &kp DOT                               &trans
+&none                             &kp KP_NUMBER_7               &kp KP_NUMBER_8                   &kp KP_NUMBER_9             &none                            &kp PLUS      &kp N7  &kp N8  &kp N9  &kp MINUS
+&home_l LEFT_CONTROL KP_NUMBER_0  &home_l LEFT_ALT KP_NUMBER_4  &home_l LEFT_COMMAND KP_NUMBER_5  &home_l LSHIFT KP_NUMBER_6  &kp PERCENT  &trans      &trans  &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0
+&kp KP_N0                         &kp KP_NUMBER_1               &kp KP_NUMBER_2                   &kp KP_NUMBER_3             &kp PERIOD   &trans      &trans  &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp SLASH
+&trans                            &trans                        &trans                            &trans                      &trans       &trans      &trans  &trans                                &trans
             >;
         };
 
